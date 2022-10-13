@@ -1,0 +1,172 @@
+.cheil-button-background {
+background-image: linear-gradient(45deg,#F06D3E,#FF0188,#5AB5EA,#F06D3E,#FF0188,#5AB5EA);
+background-size: 430% 430%;
+border-radius: 50px;
+box-shadow: none;
+color: white;
+font-weight: 700;
+display: inline-block;
+font-family: 'Arial', sans-serif;
+font-size: 16px;
+text-decoration: none;
+transition: box-shadow 0.2s linear;
+animation: gradient 5s linear infinite;
+}
+
+a.cheil-button-secondary .text-block-20 {
+transition: all 0.2s linear;
+}
+
+a.cheil-button-secondary:hover .text-block-20 {
+border-color: #FF9900;
+color: #FF9900;
+}
+
+a .cheil-button-background:hover {
+box-shadow: 0 12px 24px rgba(240,109,62,0.2),12px -12px 24px rgba(255,1,136,0.2),-12px 0 24px rgba(90,181,234,0.2);
+}
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+100% {
+    background-position: 100% 50%;
+}
+}
+
+.email-icon-container {
+transition: border-color 0.2s ease-out;
+}
+.get-in-touch-link:hover .email-icon-container {
+border-color: #FF9900;
+}
+.get-in-touch-link svg#Layer_1. .get-in-touch-text {
+transition: all 0.2s linear;
+}
+.get-in-touch-link:hover svg#Layer_1 {
+fill: #FF9900!important;
+}
+.get-in-touch-link:hover .get-in-touch-text{
+color: #FF9900;
+}
+.get-in-touch-link .get-in-touch-text:after{
+content: '';
+background: #ffffff;
+bottom: 0;
+height: 2px;
+left: 0;
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+transform-origin: 0 0;
+transition: all 0.2s ease-out;
+}
+.get-in-touch-link:hover .get-in-touch-text:after{
+background: #FF9900;
+transform: scaleX(1);
+}
+.plain-link {
+
+}
+.plain-link:after {
+content: '';
+background: #FF9900;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 2px;
+transform: translateY(-10px) scale(0);
+transform-origin: left center;
+transition: transform 0.2s linear;
+}
+.plain-link:hover:after {
+transform: translateY(-10px) scale(1);
+}
+.w-richtext ul {
+list-style-type: none;
+margin-left: 0;
+padding-left: 0;
+}
+
+.w-richtext ul li {
+padding-left: 24px;
+position: relative;
+}
+
+.w-richtext ul li:before {
+content: '';
+background: #ed7c31;
+border-radius: 50%;
+height: 8px;
+left: 0;
+position: absolute;
+transform: translateY(-50%);
+top: 50%;
+width: 8px;
+}
+
+.collection-item-2:nth-child(odd) {
+padding-left: 0;
+}
+.collection-item-2:nth-child(even) {
+padding-right: 0;
+}
+
+.word-card .hover-overlay, .project-card .hover-overlay {
+transition: all 0.2s linear;
+}
+
+.work-card:hover .hover-overlay, .project-card:hover .hover-overlay {
+opacity: 1;
+}
+
+.service-heading {
+justify-self: flex-start;
+}
+
+.ken-burns-slide {
+animation-duration: 15s;
+animation-name: ken-burns-transition;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+.slide-1 {
+animation-delay: 0;
+}
+
+.slide-2 {
+animation-delay: 5s;
+}
+
+.slide-3 {
+animation-delay: 10s;
+}
+
+@keyframes ken-burns-transition {
+0% {
+    opacity: 0;
+    transform: scale(1);
+}
+6.66666667% {
+    opacity: 1;
+    transform: scale(1.0125);
+}
+
+33.3333333% {
+    opacity: 1;
+    transform: scale(1.0625);
+}
+
+40% {
+    opacity: 0;
+    transform: scale(1.075);
+}
+
+100% {
+    opacity: 0;
+    transform: scale(1);
+}
+}
